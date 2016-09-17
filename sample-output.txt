@@ -1,0 +1,60 @@
+1-argc, ./test-argv
+Malloc successful
+Free succesful
+totalSize(20480),usedSize(0),first-node-size(20480),totalOps(2)
+ ======================================================
+ ==========    Start Test[1]  ==========
+======== Start TestID (1), Totalsize (20480), numObjs(5), numOps (10)
+Tid#(1)::Ops#(0)::Malloc Ops/size(1/4)::Status=(success)
+Tid#(1)::Ops#(1)::Malloc Ops/size(2/4)::Status=(success)
+Tid#(1)::Ops#(2)::Malloc Ops/size(3/8)::Status=(success)
+Tid#(1)::Ops#(3)::Malloc Ops/size(4/256)::Status=(success)
+Tid#(1)::Ops#(4)::Malloc Ops/size(5/16)::Status=(success)
+Tid#(1)::Ops#(5)::Free Ops/size(-1/4)::Status=(success)
+Tid#(1)::Ops#(6)::Free Ops/size(-2/4)::Status=(success)
+Tid#(1)::Ops#(7)::Free Ops/size(-3/8)::Status=(success)
+Tid#(1)::Ops#(8)::Free Ops/size(-4/256)::Status=(success)
+Tid#(1)::Ops#(9)::Free Ops/size(-5/16)::Status=(success)
+======== End  TestId(1)========)
+totalSize(20480),usedSize(0),first-node-size(20480),totalOps(10)
+ ==========    End   Test[1]  ==========
+ ======================================================
+ ==========    Start Test[2]  ==========
+======== Start TestID (2), Totalsize (20480), numObjs(3), numOps (6)
+Tid#(2)::Ops#(0)::Malloc Ops/size(1/16)::Status=(success)
+Tid#(2)::Ops#(1)::Malloc Ops/size(2/256)::Status=(success)
+Tid#(2)::Ops#(2)::Malloc Ops/size(3/60)::Status=(success)
+Tid#(2)::Ops#(3)::Free Ops/size(-1/16)::Status=(success)
+Tid#(2)::Ops#(4)::Free Ops/size(-3/60)::Status=(success)
+Tid#(2)::Ops#(5)::Free Ops/size(-2/256)::Status=(success)
+======== End  TestId(2)========)
+totalSize(20480),usedSize(0),first-node-size(20480),totalOps(6)
+ ==========    End   Test[2]  ==========
+ ======================================================
+ ==========    Start Test[3]  ==========
+======== Start TestID (3), Totalsize (1024), numObjs(6), numOps (14)
+Tid#(3)::Ops#(0)::Malloc Ops/size(1/16)::Status=(success)
+Tid#(3)::Ops#(1)::Malloc Ops/size(2/16)::Status=(success)
+Tid#(3)::Ops#(2)::Malloc Ops/size(3/256)::Status=(success)
+Tid#(3)::Ops#(3)::Malloc Ops/size(4/256)::Status=(success)
+Tid#(3)::Ops#(4)::Malloc Ops/size(5/256)::Status=(success)
+Could not find available node with size (256)
+Tid#(3)::Ops#(5)::Malloc Ops/size(6/256)::Status=(fail)
+Tid#(3)::Ops#(6)::Free Ops/size(-5/256)::Status=(success)
+Tid#(3)::Ops#(7)::Malloc Ops/size(6/256)::Status=(success)
+Could not find available node with size (256)
+Tid#(3)::Ops#(8)::Malloc Ops/size(5/256)::Status=(fail)
+Tid#(3)::Ops#(9)::Free Ops/size(-6/256)::Status=(success)
+Tid#(3)::Ops#(10)::Free Ops/size(-4/256)::Status=(success)
+Tid#(3)::Ops#(11)::Free Ops/size(-3/256)::Status=(success)
+Tid#(3)::Ops#(12)::Free Ops/size(-2/16)::Status=(success)
+Tid#(3)::Ops#(13)::Free Ops/size(-1/16)::Status=(success)
+======== End  TestId(3)========)
+totalSize(1024),usedSize(0),first-node-size(1024),totalOps(14)
+ ==========    End   Test[3]  ==========
+ ======================================================
+ ==========    Start Thread Test  ==========
+===Totalsize (20480), numObjs(5), numOps (40), numThreads(10)
+totalSize(20480),usedSize(0),first-node-size(20480),totalOps(0)
+======== End  Thread Test ==========
+totalSize(20480),usedSize(0),first-node-size(20480),totalOps(400)
